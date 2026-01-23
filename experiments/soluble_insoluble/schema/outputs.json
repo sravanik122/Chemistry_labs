@@ -1,0 +1,23 @@
+{
+  "final_state": {
+    "dissolved_fraction": "number",
+    "undissolved_mass": "number",
+    "solution_concentration": "number",
+    "solution_type": "string"
+  },
+
+  "timeline": {
+    "t": "number[]",
+    "dissolved_fraction": "number[]",
+    "turbidity_level": "number[]",
+    "concentration": "number[]"
+  },
+
+  "visual": {
+    "max_particles": "number",
+    "show_sedimentation": "boolean",
+    "show_turbidity": "boolean",
+    "saturation_threshold": "number",
+    "particle_fade_rate": "number"
+  }
+}
