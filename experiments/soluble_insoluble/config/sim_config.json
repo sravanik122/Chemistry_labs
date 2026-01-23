@@ -1,0 +1,58 @@
+{
+  "experiment_version": "1.0.0",
+
+  "default_sampling_interval": 1.0,
+  "default_total_time": 120,
+  "noise_sigma": 0.01,
+
+  "default_input_ranges": {
+    "temperature": [0, 100],
+    "solute_mass": [0, 100],
+    "solvent_volume": [50, 1000],
+    "stirring_speed": [0, 500],
+    "particle_size": [0.01, 5.0]
+  },
+
+  "constants": {
+    "reference_temperature": 25,
+
+    "solubility_limits": {
+      "sugar": 2.0,
+      "salt": 0.36,
+      "sand": 0.0,
+      "chalk": 0.0,
+      "oil": 0.0
+    },
+
+    "temperature_solubility_factor": {
+      "sugar": 0.015,
+      "salt": 0.005
+    },
+
+    "particle_size_factor": {
+      "small": 1.2,
+      "medium": 1.0,
+      "large": 0.7
+    },
+
+    "stirring_efficiency": {
+      "none": 0.4,
+      "manual": 0.8,
+      "magnetic": 1.2
+    },
+
+    "pressure_factor": 0.02,
+
+    "impurity_penalty_factor": 0.3
+  },
+
+  "visual": {
+    "max_particles": 500,
+    "particle_fade_rate": 0.02,
+    "show_turbidity": true,
+    "show_sedimentation": true,
+    "saturation_color_threshold": 0.9,
+    "solvent_color": "#A7C7E7",
+    "solute_color": "#C2B280"
+  }
+}
