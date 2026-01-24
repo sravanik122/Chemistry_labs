@@ -1,0 +1,21 @@
+{
+  "final_state": {
+    "separated_mass": "number",
+    "purity_level": "number",
+    "remaining_impurity": "number",
+    "method_used": "string"
+  },
+
+  "timeline": {
+    "t": "number[]",
+    "separation_efficiency": "number[]",
+    "remaining_impurity": "number[]",
+    "separated_mass": "number[]"
+  },
+
+  "visual": {
+    "max_particles": "number",
+    "highlight_method": "boolean",
+    "progress_steps": "number"
+  }
+}
