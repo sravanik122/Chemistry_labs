@@ -1,0 +1,27 @@
+{
+  "final_state": {
+    "final_temperature": "number",
+    "current_state": "string",
+    "energy_absorbed": "number",
+    "phase_fraction": "number"
+  },
+
+  "timeline": {
+    "t": "number[]",
+    "temperature": "number[]",
+    "state": "string[]",
+    "energy_absorbed": "number[]"
+  },
+
+  "visual": {
+    "show_phase_color": "boolean",
+    "show_particles": "boolean",
+    "show_phase_label": "boolean",
+    "particle_density": "number",
+    "phase_colors": {
+      "solid": "string",
+      "liquid": "string",
+      "gas": "string"
+    }
+  }
+}
