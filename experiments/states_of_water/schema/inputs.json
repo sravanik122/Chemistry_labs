@@ -1,0 +1,114 @@
+{
+  "initial_state": {
+    "type": "enum",
+    "options": ["solid", "liquid", "gas"],
+    "units": "-",
+    "default": "liquid",
+    "description": "Initial physical state of water before heating or cooling."
+  },
+
+  "temperature": {
+    "type": "number",
+    "units": "°C",
+    "min": -20,
+    "max": 120,
+    "default": 25,
+    "description": "Temperature of the water sample."
+  },
+
+  "pressure": {
+    "type": "number",
+    "units": "atm",
+    "min": 0.5,
+    "max": 2.0,
+    "default": 1.0,
+    "description": "Ambient pressure affecting the state of water."
+  },
+
+  "mass_of_water": {
+    "type": "number",
+    "units": "g",
+    "min": 10,
+    "max": 1000,
+    "default": 100,
+    "description": "Mass of the water sample."
+  },
+
+  "heating_rate": {
+    "type": "number",
+    "units": "°C/s",
+    "min": 0,
+    "max": 5,
+    "default": 1,
+    "description": "Rate at which heat is supplied."
+  },
+
+  "cooling_rate": {
+    "type": "number",
+    "units": "°C/s",
+    "min": 0,
+    "max": 5,
+    "default": 0,
+    "description": "Rate at which heat is removed."
+  },
+
+  "heat_supplied": {
+    "type": "number",
+    "units": "kJ",
+    "min": 0,
+    "max": 500,
+    "default": 50,
+    "description": "Total heat energy supplied to the system."
+  },
+
+  "container_material": {
+    "type": "enum",
+    "options": ["metal", "glass", "plastic"],
+    "units": "-",
+    "default": "metal",
+    "description": "Material of the container."
+  },
+
+  "container_insulation": {
+    "type": "enum",
+    "options": ["none", "low", "medium", "high"],
+    "units": "-",
+    "default": "medium",
+    "description": "Level of thermal insulation of the container."
+  },
+
+  "surface_area_exposed": {
+    "type": "number",
+    "units": "cm²",
+    "min": 10,
+    "max": 500,
+    "default": 100,
+    "description": "Surface area of water exposed to the surroundings."
+  },
+
+  "ambient_conditions": {
+    "type": "enum",
+    "options": ["cold", "normal", "hot"],
+    "units": "-",
+    "default": "normal",
+    "description": "Surrounding environmental conditions."
+  },
+
+  "energy_loss": {
+    "type": "number",
+    "units": "%",
+    "min": 0,
+    "max": 30,
+    "default": 5,
+    "description": "Percentage of heat lost to surroundings."
+  },
+
+  "observation_duration": {
+    "type": "number",
+    "units": "s",
+    "min": 10,
+    "max": 600,
+    "default": 300,
+    "description": "Total time of observation."
+  }
+}
