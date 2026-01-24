@@ -1,0 +1,96 @@
+{
+  "mixture_type": {
+    "type": "enum",
+    "units": "",
+    "options": ["solid-solid", "solid-liquid"],
+    "default": "solid-liquid",
+    "description": "Type of mixture to be separated."
+  },
+
+  "particle_size": {
+    "type": "number",
+    "units": "micrometers",
+    "min": 1,
+    "max": 1000,
+    "default": 200,
+    "description": "Average size of particles present in the mixture."
+  },
+
+  "solubility": {
+    "type": "number",
+    "units": "g/100ml",
+    "min": 0,
+    "max": 100,
+    "default": 20,
+    "description": "Solubility of the solid component in the solvent."
+  },
+
+  "density_difference": {
+    "type": "number",
+    "units": "kg/m³",
+    "min": 0,
+    "max": 5000,
+    "default": 800,
+    "description": "Density difference between the components of the mixture."
+  },
+
+  "magnetic_property": {
+    "type": "enum",
+    "units": "",
+    "options": ["magnetic", "non_magnetic"],
+    "default": "non_magnetic",
+    "description": "Whether the solid component is magnetic."
+  },
+
+  "filtration_medium": {
+    "type": "enum",
+    "units": "",
+    "options": ["cloth", "filter_paper", "sieve"],
+    "default": "filter_paper",
+    "description": "Medium used for filtration."
+  },
+
+  "evaporation_temperature": {
+    "type": "number",
+    "units": "°C",
+    "min": 20,
+    "max": 120,
+    "default": 80,
+    "description": "Temperature used during evaporation."
+  },
+
+  "solvent_volume": {
+    "type": "number",
+    "units": "ml",
+    "min": 0,
+    "max": 1000,
+    "default": 250,
+    "description": "Volume of solvent used in the mixture."
+  },
+
+  "impurity_percentage": {
+    "type": "number",
+    "units": "%",
+    "min": 0,
+    "max": 100,
+    "default": 30,
+    "description": "Percentage of impurities present initially."
+  },
+
+  "manual_efficiency": {
+    "type": "enum",
+    "units": "",
+    "options": ["low", "medium", "high"],
+    "default": "medium",
+    "description": "Efficiency of the separation process due to human handling."
+  },
+
+  "separation_time": {
+    "type": "number",
+    "units": "seconds",
+    "min": 10,
+    "max": 300,
+    "default": 120,
+    "description": "Total time allowed for the separation process."
+  }
+}
