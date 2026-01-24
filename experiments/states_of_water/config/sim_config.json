@@ -1,0 +1,47 @@
+{
+  "experiment_version": "1.0.0",
+
+  "default_sampling_interval": 1.0,
+  "default_total_time": 300,
+  "noise_sigma": 0.01,
+
+  "default_input_ranges": {
+    "temperature": [-20, 120],
+    "pressure": [0.5, 2.0],
+    "mass_of_water": [10, 1000],
+    "heating_rate": [0, 5],
+    "cooling_rate": [0, 5]
+  },
+
+  "constants": {
+    "freezing_point": 0,
+    "boiling_point": 100,
+
+    "latent_heat_fusion": 334,
+    "latent_heat_vaporization": 2260,
+
+    "specific_heat": {
+      "ice": 2.1,
+      "water": 4.18,
+      "steam": 2.0
+    },
+
+    "pressure_effect_factor": 0.5,
+
+    "energy_loss_factor": 0.05
+  },
+
+  "visual": {
+    "show_phase_color": true,
+    "ice_color": "#b3e5fc",
+    "water_color": "#2196f3",
+    "steam_color": "#e0e0e0",
+
+    "show_particles": true,
+    "max_particles": 500,
+
+    "show_phase_label": true,
+    "temperature_scale_min": -20,
+    "temperature_scale_max": 120
+  }
+}
