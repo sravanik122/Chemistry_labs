@@ -1,0 +1,84 @@
+{
+  "substance_type": {
+    "type": "enum",
+    "units": "",
+    "values": ["metal", "non-metal", "compound", "mixture", "organic"],
+    "default": "compound",
+    "description": "Type of substance undergoing change."
+  },
+
+  "temperature": {
+    "type": "number",
+    "units": "°C",
+    "min": -50,
+    "max": 300,
+    "default": 25,
+    "description": "Temperature during the process."
+  },
+
+  "pressure": {
+    "type": "number",
+    "units": "atm",
+    "min": 0.5,
+    "max": 10,
+    "default": 1.0,
+    "description": "Pressure applied to the system."
+  },
+
+  "reaction_time": {
+    "type": "number",
+    "units": "s",
+    "min": 1,
+    "max": 600,
+    "default": 60,
+    "description": "Duration of the reaction or change."
+  },
+
+  "reversibility": {
+    "type": "boolean",
+    "units": "",
+    "default": false,
+    "description": "Whether the change is reversible."
+  },
+
+  "energy_change": {
+    "type": "number",
+    "units": "J",
+    "min": -5000,
+    "max": 5000,
+    "default": 0,
+    "description": "Energy absorbed or released."
+  },
+
+  "catalyst_presence": {
+    "type": "boolean",
+    "units": "",
+    "default": false,
+    "description": "Presence of a catalyst in the reaction."
+  },
+
+  "physical_state": {
+    "type": "enum",
+    "units": "",
+    "values": ["solid", "liquid", "gas"],
+    "default": "solid",
+    "description": "Initial physical state of the substance."
+  },
+
+  "mass_change": {
+    "type": "number",
+    "units": "g",
+    "min": -50,
+    "max": 50,
+    "default": 0,
+    "description": "Change in mass during the process."
+  },
+
+  "environment": {
+    "type": "enum",
+    "units": "",
+    "values": ["open", "closed", "controlled"],
+    "default": "open",
+    "description": "Environmental condition of the system."
+  }
+}
