@@ -1,0 +1,22 @@
+{
+  "final_state": {
+    "final_pH": "number",
+    "substance_nature": "string",
+    "indicator_color": "string",
+    "confidence_level": "number"
+  },
+
+  "timeline": {
+    "t": "number[]",
+    "pH": "number[]",
+    "color_intensity": "number[]",
+    "reaction_progress": "number[]"
+  },
+
+  "visual": {
+    "show_ph_meter": "boolean",
+    "show_color_transition": "boolean",
+    "show_reaction_progress": "boolean",
+    "color_scale": "string"
+  }
+}
