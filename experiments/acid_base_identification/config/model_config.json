@@ -1,0 +1,36 @@
+{
+  "model_version": "1.0.0",
+
+  "epochs": 45,
+  "batch_size": 16,
+  "learning_rate": 0.004,
+  "validation_split": 0.2,
+
+  "optimizer": "adam",
+
+  "model_layers": [
+    128,
+    96,
+    64,
+    32
+  ],
+
+  "dropout_rate": 0.15,
+
+  "loss": "mse",
+
+  "metrics": [
+    "mae",
+    "mse"
+  ],
+
+  "early_stopping": {
+    "monitor": "val_loss",
+    "patience": 6,
+    "restore_best_weights": true
+  },
+
+  "tensorboard_logdir": "./logs/acid_base_identification",
+
+  "model_checkpoint_path": "./models/acid_base_model.h5"
+}
