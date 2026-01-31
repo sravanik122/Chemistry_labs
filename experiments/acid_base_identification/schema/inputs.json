@@ -1,0 +1,88 @@
+{
+  "substance_type": {
+    "type": "enum",
+    "units": "",
+    "values": ["acid", "base", "neutral", "unknown"],
+    "default": "unknown",
+    "description": "Nature of the test substance."
+  },
+
+  "indicator_type": {
+    "type": "enum",
+    "units": "",
+    "values": ["litmus", "phenolphthalein", "methyl_orange", "universal"],
+    "default": "litmus",
+    "description": "Chemical indicator used for identification."
+  },
+
+  "concentration": {
+    "type": "number",
+    "units": "mol/L",
+    "min": 0.01,
+    "max": 5.0,
+    "default": 0.5,
+    "description": "Concentration of the solution."
+  },
+
+  "temperature": {
+    "type": "number",
+    "units": "°C",
+    "min": 5,
+    "max": 80,
+    "default": 25,
+    "description": "Temperature of the solution."
+  },
+
+  "volume": {
+    "type": "number",
+    "units": "ml",
+    "min": 1,
+    "max": 500,
+    "default": 100,
+    "description": "Volume of the solution used."
+  },
+
+  "purity": {
+    "type": "number",
+    "units": "%",
+    "min": 0,
+    "max": 100,
+    "default": 95,
+    "description": "Purity level of the substance."
+  },
+
+  "reaction_time": {
+    "type": "number",
+    "units": "s",
+    "min": 1,
+    "max": 300,
+    "default": 30,
+    "description": "Time allowed for indicator reaction."
+  },
+
+  "dilution_factor": {
+    "type": "number",
+    "units": "",
+    "min": 1,
+    "max": 10,
+    "default": 1,
+    "description": "Factor by which the solution is diluted."
+  },
+
+  "pH_range": {
+    "type": "number",
+    "units": "",
+    "min": 0,
+    "max": 14,
+    "default": 7,
+    "description": "Expected pH range for analysis."
+  },
+
+  "observation_accuracy": {
+    "type": "enum",
+    "units": "",
+    "values": ["low", "medium", "high"],
+    "default": "medium",
+    "description": "Accuracy level of visual observation."
+  }
+}
