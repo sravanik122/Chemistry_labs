@@ -1,0 +1,44 @@
+{
+  "experiment_version": "1.0.0",
+
+  "default_sampling_interval": 1.0,
+  "default_total_time": 60,
+  "noise_sigma": 0.02,
+
+  "default_input_ranges": {
+    "temperature": [-50, 300],
+    "pressure": [0.5, 10],
+    "reaction_time": [1, 600],
+    "mass_change": [-50, 50],
+    "energy_change": [-5000, 5000]
+  },
+
+  "constants": {
+    "standard_pressure": 1.0,
+    "standard_temperature": 25.0,
+
+    "physical_change_threshold": 0.3,
+    "chemical_change_threshold": 0.7,
+
+    "catalyst_effect_factor": 1.5,
+
+    "energy_release_factor": 0.01,
+    "energy_absorption_factor": 0.008,
+
+    "mass_conservation_tolerance": 0.02,
+
+    "environment_effect": {
+      "open": 0.9,
+      "closed": 1.0,
+      "controlled": 1.1
+    }
+  },
+
+  "visual": {
+    "show_state_transition": true,
+    "show_energy_meter": true,
+    "show_mass_scale": true,
+    "transition_steps": 40,
+    "color_map": "phase_change"
+  }
+}
