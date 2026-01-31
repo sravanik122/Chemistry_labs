@@ -1,0 +1,36 @@
+{
+  "model_version": "1.0.0",
+
+  "epochs": 50,
+  "batch_size": 16,
+  "learning_rate": 0.004,
+  "validation_split": 0.2,
+
+  "optimizer": "adam",
+
+  "model_layers": [
+    128,
+    96,
+    64,
+    32
+  ],
+
+  "dropout_rate": 0.15,
+
+  "loss": "mse",
+
+  "metrics": [
+    "mae",
+    "mse"
+  ],
+
+  "early_stopping": {
+    "monitor": "val_loss",
+    "patience": 7,
+    "restore_best_weights": true
+  },
+
+  "tensorboard_logdir": "./logs/physical_chemical_changes",
+
+  "model_checkpoint_path": "./models/physical_chemical_model.h5"
+}
