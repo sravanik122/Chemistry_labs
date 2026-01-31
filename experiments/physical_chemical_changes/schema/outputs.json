@@ -1,0 +1,24 @@
+{
+  "final_state": {
+    "change_type": "string",
+    "final_state": "string",
+    "mass_loss_or_gain": "number",
+    "energy_released_or_absorbed": "number",
+    "reversibility_status": "boolean"
+  },
+
+  "timeline": {
+    "t": "number[]",
+    "reaction_progress": "number[]",
+    "temperature_change": "number[]",
+    "mass_change": "number[]",
+    "energy_change": "number[]"
+  },
+
+  "visual": {
+    "show_state_transition": "boolean",
+    "show_energy_meter": "boolean",
+    "show_mass_scale": "boolean",
+    "show_change_label": "boolean"
+  }
+}
