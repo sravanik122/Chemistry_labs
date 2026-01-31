@@ -1,0 +1,70 @@
+{
+  "experiment_version": "1.0.0",
+
+  "default_sampling_interval": 1.0,
+  "default_total_time": 60,
+  "noise_sigma": 0.02,
+
+  "default_input_ranges": {
+    "concentration": [0.01, 5.0],
+    "temperature": [5, 80],
+    "volume": [1, 500],
+    "purity": [0, 100],
+    "reaction_time": [1, 300],
+    "dilution_factor": [1, 10],
+    "pH_range": [0, 14]
+  },
+
+  "constants": {
+    "neutral_pH": 7.0,
+
+    "acid_strength_factor": {
+      "weak": 0.4,
+      "medium": 0.7,
+      "strong": 1.0
+    },
+
+    "base_strength_factor": {
+      "weak": 0.4,
+      "medium": 0.7,
+      "strong": 1.0
+    },
+
+    "indicator_color_map": {
+      "litmus": {
+        "acid": "red",
+        "neutral": "purple",
+        "base": "blue"
+      },
+      "phenolphthalein": {
+        "acid": "colorless",
+        "neutral": "colorless",
+        "base": "pink"
+      },
+      "methyl_orange": {
+        "acid": "red",
+        "neutral": "orange",
+        "base": "yellow"
+      },
+      "universal": {
+        "acid": "red",
+        "neutral": "green",
+        "base": "purple"
+      }
+    },
+
+    "temperature_effect_factor": 0.01,
+
+    "dilution_effect_factor": 0.08,
+
+    "purity_effect_factor": 0.01
+  },
+
+  "visual": {
+    "max_particles": 200,
+    "color_transition_steps": 40,
+    "show_ph_meter": true,
+    "show_color_scale": true,
+    "show_reaction_progress": true
+  }
+}
